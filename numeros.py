@@ -56,5 +56,3 @@ class Tabla_de_puntuaciones:
 
 procesador = Tabla_de_puntuaciones()
 procesador.inciar()
-
-0 / 0
