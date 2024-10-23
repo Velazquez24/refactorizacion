@@ -1,6 +1,6 @@
 class Tabla_de_puntuaciones:
-    def ingresar_puntuacion(self):
-        print('Seleccione el proceso que desea aplicar')
+    def mostrar_menu(self):
+        print('Menu principal'.center(60,'-'))
         print('1: Ingresar puntuación y comentario')
         print('2: Comprueba los resultados obtenidos hasta ahora.')
         print('3: Finalizar')
@@ -37,8 +37,8 @@ class Tabla_de_puntuaciones:
     
     def inciar(self):
             while True:
-                self.ingresar_puntuacion()
-                num = input()
+                self.mostrar_menu()
+                num = input('Seleccione una opcion: ')
                 
                 if num.isdecimal():
                     num = int(num)
@@ -53,6 +53,5 @@ class Tabla_de_puntuaciones:
                     print('Introduzca un número del 1 al 3')
             else:
                 print('Introduzca un número del 1 al 3')
-
 procesador = Tabla_de_puntuaciones()
 procesador.inciar()
